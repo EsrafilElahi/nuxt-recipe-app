@@ -3,6 +3,6 @@
 </script>
 <template>
   <div>
-    <span>inde home page</span>
+    <span class="text-primary-100">home page</span>
   </div>
 </template>
