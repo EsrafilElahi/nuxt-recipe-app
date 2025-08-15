@@ -1,4 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import Aura from "@primeuix/themes/aura";
 
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
@@ -15,7 +16,33 @@ export default defineNuxtConfig({
     "@nuxt/fonts",
     "@nuxt/image",
     "@nuxtjs/tailwindcss",
+    "@primevue/nuxt-module",
   ],
+
+  primevue: {
+    // برای کاهش حجم باندل، فقط کامپوننت‌های مورد نیاز را ایمپورت کنید:
+    components: {
+      include: ["Button", "InputText"], // فقط این کامپوننت‌ها ثبت می‌شوند
+      // prefix: 'Prime' ===> <PrimeButton />
+      // exclude: ['Galleria', 'Carousel']
+    },
+
+    importTheme: { from: "~/assets/themes/myTheme.js" },
+
+    options: {
+      ripple: true,
+      inputVariant: "filled",
+
+      theme: {
+        preset: Aura,
+        options: {
+          prefix: "prime",
+          darkModeSelector: "system",
+          cssLayer: false,
+        },
+      },
+    },
+  },
 
   fonts: {
     provider: "google",
