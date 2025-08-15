@@ -17,11 +17,27 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
   ],
 
+  fonts: {
+    provider: "google",
+    families: [
+      {
+        name: "Delius",
+        weights: [400, 500, 700],
+        styles: ["italic", "normal"],
+        subsets: ["latin"],
+        display: "swap",
+      },
+    ],
+  },
+
   tailwindcss: {
     cssPath: "~/assets/css/tailwind.css",
     config: {
       theme: {
         extend: {
+          fontFamily: {
+            sans: ["Delius", "sans-serif"],
+          },
           colors: {
             primary: {
               DEFAULT: "var(--color-primary)",
