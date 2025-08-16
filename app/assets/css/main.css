@@ -9,3 +9,7 @@
 .-p-card-shadow {
   box-shadow: 10px 10px 10px #d0c;
 }
+
+.p-card-body {
+  padding: 16px;
+}
