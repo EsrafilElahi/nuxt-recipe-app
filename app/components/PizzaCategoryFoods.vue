@@ -16,8 +16,7 @@ const handleSeeMorePizzaFoods = () => {
       </div>
 
       <span class="text-quick-silver text-sm cursor-pointer hover:text-secondary transition-all duration-[250ms]"
-        @click="handleSeeMorePizzaFoods">see
-        all</span>
+        @click="handleSeeMorePizzaFoods">see all</span>
     </div>
 
     <NuxtLink to="/about">
@@ -30,7 +29,7 @@ const handleSeeMorePizzaFoods = () => {
 
         <div class="flex-[50%]">
           <h2 v-capitalize class="text-secondary text-[18px] font-bold"> Mung Folan </h2>
-          <div class="flex gap-1 items-center justify-start mt-2">
+          <div class="flex gap-2.5 items-center justify-start mt-2">
             <div class="border border-primary w-[18px] h-[18px] flex justify-center items-center rounded-full">
               <Icon name="lucide:check" size="14" class="text-primary" />
             </div>
