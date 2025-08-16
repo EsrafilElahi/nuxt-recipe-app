@@ -1,4 +1,9 @@
 <script setup>
+const router = useRouter();
+
+const handleSeeMoreItalianFoods = () => {
+  return router.push('/italian-foods-list')
+}
 
 </script>
 
@@ -10,7 +15,8 @@
         <span class="text-primary text-[15px]">with features</span>
       </div>
 
-      <span class="text-quick-silver text-sm cursor-pointer hover:text-secondary transition-all duration-[250ms]">see
+      <span class="text-quick-silver text-sm cursor-pointer hover:text-secondary transition-all duration-[250ms]"
+        @click="handleSeeMoreItalianFoods">see
         all</span>
     </div>
 

@@ -1,12 +1,17 @@
 <script setup>
-import { CustomToolbar } from '#components';
 
 
 </script>
 <template>
   <div>
 
-    <AsianCategoryFoods />
+    <NuxtClientFallback fallback-tag="section">
+      <template #fallback>
+        <span>loading...</span>
+      </template>
+
+      <AsianCategoryFoods />
+    </NuxtClientFallback>
 
   </div>
 </template>
