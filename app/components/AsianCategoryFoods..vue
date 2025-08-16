@@ -3,39 +3,40 @@
 </script>
 
 <template>
-  <div>
-    <div>
-      <div>
-        <span>Iralian</span>
-        <span>with features</span>
+  <div class="flex flex-col items-start justify-between border border-primary">
+    <div class="w-full flex justify-between items-center">
+      <div class="flex flex-col items-start justify-between">
+        <span v-capitalize class="text-secondary font-bold text-[20px]">italian recipes</span>
+        <span class="text-primary text-[15px]">with features</span>
       </div>
 
-      <span>see all</span>
+      <span class="text-quick-silver text-sm cursor-pointer hover:text-secondary transition-all duration-[250ms]">see
+        all</span>
     </div>
 
-    <div>
-      <Card style="width: 25rem; overflow: hidden">
+    <NuxtLink to="/about">
+      <Card
+        class="w-[200px] mt-7 shadow-[0px_5px_20px_3px_rgba(0,0,0,0.15)] hover:shadow-[0px_5px_20px_4px_rgba(0,0,0,0.20)] transition-shadow duration-[400ms]">
         <template #header>
-          <img alt="user header"
+          <img alt="food img"
             src="https://thumbs.dreamstime.com/b/single-sushi-maki-above-salmon-avocado-white-background-image-focuses-structure-colors-ingredients-383015712.jpg" />
         </template>
-        <template #title>Advanced Card</template>
-        <template #subtitle>Card subtitle</template>
+
         <template #content>
-          <p class="m-0">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae
-            numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse,
-            cupiditate neque
-            quas!
-          </p>
-        </template>
-        <template #footer>
-          <div class="flex gap-4 mt-1">
-            <Button label="Cancel" severity="secondary" variant="outlined" class="w-full" />
-            <Button label="Save" class="w-full" />
+          <div class="flex justify-between items-end gap-3">
+            <div>
+              <h3 class="text-secondary text-[17px]">pizza food name</h3>
+              <h6 class="text-quick-silver text-[14px]">dinner</h6>
+            </div>
+
+            <div class="bg-primary p-1 px-1.5 rounded-xl flex gap-1 items-center">
+              <Icon name="lucide:star" size="12" class="text-white" />
+              <span class="text-white font-bold text-[9px]">4.3</span>
+            </div>
           </div>
+
         </template>
       </Card>
-    </div>
+    </NuxtLink>
   </div>
 </template>

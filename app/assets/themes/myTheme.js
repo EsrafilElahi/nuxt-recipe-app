@@ -33,6 +33,10 @@ const MyPreset = definePreset(Aura, {
         //   color: "{surface.500}",
         // },
 
+        card: {
+          shadow: "0 4px 10px rgba(0, 0, 0, 0.1)", // سایه پیش‌فرض برای کارت
+        },
+
         primary: {
           color: "#f6b100",
           inverseColor: "#ffffff",

@@ -12,22 +12,22 @@ const props = defineProps({
 <template>
   <Toolbar class="bg-primary rounded-none">
     <template #start>
-      <h2 v-capitalize class="font-bold text-lg">{{ title }}</h2>
+      <h2 v-capitalize class="font-bold text-[25px]">{{ title }}</h2>
     </template>
 
 
     <template #end>
-      <Button outlined rounded aria-label="about" class="group mr-3">
-        <NuxtLink to="/about">
+      <NuxtLink to="/about" class="w-[42px] h-[42px] mr-3">
+        <Button outlined rounded aria-label="about" class="group w-full h-full">
           <Icon name="lucide:user" class="text-white group-hover:text-primary" />
-        </NuxtLink>
-      </Button>
+        </Button>
+      </NuxtLink>
 
-      <Button outlined rounded aria-label="home" class="group">
-        <NuxtLink to="/">
+      <NuxtLink to="/" class="w-[42px] h-[42px]">
+        <Button outlined rounded aria-label="home" class="group w-full h-full">
           <Icon name="lucide:house" class="text-white group-hover:text-primary" />
-        </NuxtLink>
-      </Button>
+        </Button>
+      </NuxtLink>
     </template>
   </Toolbar>
 </template>
