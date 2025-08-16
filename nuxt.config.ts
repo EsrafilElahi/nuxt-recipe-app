@@ -19,6 +19,14 @@ export default defineNuxtConfig({
     "@primevue/nuxt-module",
   ],
 
+  // image: {
+  //   dir: 'public/images',  // مسیر پیش‌فرض تصاویر
+
+  //   // domains: ['nuxtjs.org'],
+  //   densities: [1],
+  //   format: ["jpg", "png"],
+  // },
+
   primevue: {
     // برای کاهش حجم باندل، فقط کامپوننت‌های مورد نیاز را ایمپورت کنید:
     components: {
@@ -56,8 +64,6 @@ export default defineNuxtConfig({
       },
     ],
   },
-
-  
 
   tailwindcss: {
     cssPath: "~/assets/css/tailwind.css",

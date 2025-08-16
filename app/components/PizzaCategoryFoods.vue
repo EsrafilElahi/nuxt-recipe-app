@@ -9,7 +9,7 @@ const handleSeeMorePizzaFoods = () => {
 </script>
 
 <template>
-  <div class="flex flex-col items-start justify-between border border-primary">
+  <div class="flex flex-col items-start justify-between border border-primary max-w-[560px] grow">
     <div class="w-full flex justify-between items-center">
       <div class="flex flex-col items-start justify-between">
         <span class="text-primary text-[15px]">with features</span>
@@ -22,7 +22,7 @@ const handleSeeMorePizzaFoods = () => {
 
     <NuxtLink to="/about">
       <div
-        class="flex items-center justify-between gap-[20px] py-2 pl-2 pr-[30px] w-[450px] mt-10 shadow-[0px_5px_20px_3px_rgba(0,0,0,0.15)] hover:shadow-[0px_5px_20px_4px_rgba(0,0,0,0.20)] transition-shadow duration-[400ms] rounded-xl">
+        class="flex items-center justify-between gap-[20px] py-2 pl-2 pr-[30px] mt-10 w-[560px] shadow-[0px_5px_20px_3px_rgba(0,0,0,0.15)] hover:shadow-[0px_5px_20px_4px_rgba(0,0,0,0.20)] transition-shadow duration-[400ms] rounded-xl">
         <div class="flex-[35%]">
           <img alt="pizza img" class="rounded-xl w-[180px] h-[100px]"
             src="https://thumbs.dreamstime.com/b/single-sushi-maki-above-salmon-avocado-white-background-image-focuses-structure-colors-ingredients-383015712.jpg" />
