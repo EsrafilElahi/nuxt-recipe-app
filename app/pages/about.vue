@@ -1,6 +1,8 @@
 <script setup>
 definePageMeta({
-  layout: 'about-layout'
+  layoutProps: {
+    title: 'about page'
+  }
 })
 
 </script>

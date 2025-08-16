@@ -2,6 +2,7 @@
 const props = defineProps({
   title: {
     type: String,
+    required: true,
     default: 'nuxt recipe app'
   }
 
@@ -17,6 +18,12 @@ const props = defineProps({
 
 
     <template #end>
+      <NuxtLink to="/search" class="w-[42px] h-[42px] mr-3">
+        <Button outlined rounded aria-label="about" class="group w-full h-full">
+          <Icon name="lucide:search" class="text-white group-hover:text-primary" />
+        </Button>
+      </NuxtLink>
+
       <NuxtLink to="/about" class="w-[42px] h-[42px] mr-3">
         <Button outlined rounded aria-label="about" class="group w-full h-full">
           <Icon name="lucide:user" class="text-white group-hover:text-primary" />
