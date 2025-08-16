@@ -1,5 +1,12 @@
 <script setup>
 
+const handleHydration = () => {
+  console.log('handleHydration comments')
+}
+
+onNuxtReady(() => {
+  console.log('app is ready!')
+})
 
 </script>
 <template>
@@ -34,7 +41,7 @@
     </div>
 
 
-    <NuxtIsland name="Comments" :lazy="true" :client-only="true" />
+    <NuxtIsland name="Comments" :lazy="true" :client-only="true" @hydrated="handleHydration" />
 
   </div>
 </template>

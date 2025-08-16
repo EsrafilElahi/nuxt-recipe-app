@@ -10,6 +10,6 @@ definePageMeta({
 
 <template>
   <div>
-    search box
+    <NuxtIsland name="SearchBox" :client-only="true" />
   </div>
 </template>
