@@ -4,7 +4,7 @@
 
 <template>
   <div>
-    <div>about layout</div>
+    <CustomToolbar title="about page" />
 
     <slot />
   </div>

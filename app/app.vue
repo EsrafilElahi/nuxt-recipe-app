@@ -1,3 +1,8 @@
+<script setup lang="ts">
+import CustomError from './components/CustomError.vue';
+
+</script>
+
 <template>
 
   <Head>
@@ -13,7 +18,13 @@
     <NuxtRouteAnnouncer />
 
     <NuxtLayout>
-      <NuxtPage />
+      <NuxtLoadingIndicator color="#00dc82" />
+      <NuxtErrorBoundary>
+        <NuxtPage />
+        <template #error="{ error }">
+          <CustomError :error="error" />
+        </template>
+      </NuxtErrorBoundary>
     </NuxtLayout>
   </div>
 </template>

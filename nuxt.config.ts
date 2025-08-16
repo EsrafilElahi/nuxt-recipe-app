@@ -22,7 +22,7 @@ export default defineNuxtConfig({
   primevue: {
     // برای کاهش حجم باندل، فقط کامپوننت‌های مورد نیاز را ایمپورت کنید:
     components: {
-      include: ["Button", "InputText", "Toolbar"], // فقط این کامپوننت‌ها ثبت می‌شوند
+      include: ["Button", "InputText", "Toolbar", "Card"], // فقط این کامپوننت‌ها ثبت می‌شوند
       // prefix: 'Prime' ===> <PrimeButton />
       // exclude: ['Galleria', 'Carousel']
     },

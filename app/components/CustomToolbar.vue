@@ -1,11 +1,18 @@
 <script setup>
+const props = defineProps({
+  title: {
+    type: String,
+    default: 'nuxt recipe app'
+  }
+
+})
 
 </script>
 
 <template>
   <Toolbar class="bg-primary rounded-none">
     <template #start>
-      <h2 v-capitalize class="font-bold text-lg">nuxt recipe app</h2>
+      <h2 v-capitalize class="font-bold text-lg">{{ title }}</h2>
     </template>
 
 
