@@ -19,8 +19,8 @@ useSeoMeta({
 });
 
 const publicUrl = useRuntimeConfig();
+const headers = useRequestHeaders();
 
-console.log({ publicUrl })
 
 
 </script>
