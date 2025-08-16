@@ -1,3 +1,7 @@
 :root {
   font-family: "Delius", sans-serif;
 }
+
+* {
+  color: black;
+}

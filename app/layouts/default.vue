@@ -4,8 +4,7 @@
 
 <template>
   <div>
-    <div>default layout</div>
-
+    <CustomToolbar />
     <slot />
   </div>
 </template>

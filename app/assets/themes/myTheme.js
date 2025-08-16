@@ -53,6 +53,21 @@ const MyPreset = definePreset(Aura, {
           focusColor: "#ffffff",
         },
 
+        // button :{
+        //   outlined: {
+        //     borderWidth: '1px',
+        //     borderColor: '{primary.color}', // استفاده از رنگ primary
+        //     hoverBorderColor: '{primary.hoverColor}',
+        //     activeBorderColor: '{primary.activeColor}',
+        //     textColor: '{primary.color}',
+        //     hoverTextColor: '#d0c',
+        //     activeTextColor: '{primary.activeColor}',
+        //     background: 'transparent',
+        //     hoverBackground: '{primary.300}', // رنگ پس‌زمینه هنگام هاور
+        //     activeBackground: '{primary.100}'
+        //   }
+        // },
+
         formField: {
           hoverBorderColor: "{primary.color}",
         },
