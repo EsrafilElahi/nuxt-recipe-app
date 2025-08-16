@@ -28,11 +28,10 @@ export default defineNuxtPlugin((nuxtApp) => {
 
   nuxtApp.vueApp.directive("capitalize", {
     mounted(el) {
-      el.innerText = capitalizeText(el.innerText);
+      capitalizeText(el);
     },
-
     updated(el) {
-      el.innerText = capitalizeText(el.innerText);
+      capitalizeText(el);
     },
 
     getSSRProps(binding, vnode) {

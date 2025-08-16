@@ -6,7 +6,7 @@ const title = computed(() => route.meta.layoutProps?.title || 'nuxt recipe app')
 
 <template>
   <div>
-    <CustomToolbar :key="title" :title="title" />
+    <CustomToolbar :title="title" />
     <div class="py-[65px] px-[100px]">
       <slot />
     </div>

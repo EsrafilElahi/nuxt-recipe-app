@@ -13,7 +13,7 @@ const props = defineProps({
 <template>
   <Toolbar class="bg-primary rounded-none">
     <template #start>
-      <h2 v-capitalize class="font-bold text-[25px]">{{ title }}</h2>
+      <h2 v-capitalize class="font-bold text-[25px] capitalize">{{ title }}</h2>
     </template>
 
 
