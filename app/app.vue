@@ -1,4 +1,27 @@
 <script setup lang="ts">
+const appConfig = useAppConfig();
+console.log({ appConfig });
+
+useHeadSafe({
+  title: 'recipe app',
+  meta: [
+    { name: 'description', content: 'recipe app' }
+  ]
+});
+
+useSeoMeta({
+  title: 'Recipe App',
+  ogTitle: 'Recipe App SEO',
+  description: 'This is Recipe App SEO, let me tell you all about it.',
+  ogDescription: 'This is Recipe App SEO, let me tell you all about it.',
+  ogImage: 'https://example.com/image.png',
+  twitterCard: 'summary_large_image',
+});
+
+const publicUrl = useRuntimeConfig();
+
+console.log({ publicUrl })
+
 
 </script>
 

@@ -1,12 +1,19 @@
 <script setup>
-
-const handleHydration = () => {
-  console.log('handleHydration comments')
-}
-
 onNuxtReady(() => {
   console.log('app is ready!')
 })
+
+// onBeforeRouteLeave((to, from, next) => {
+//   // if (formIsDirty.value) {
+//   //   const confirm = window.confirm('تغییرات ذخیره نشده! مطمئنید؟')
+//   //   if (!confirm) return next(false) // لغو تغییر مسیر
+//   // }
+//   // next() // اجازه تغییر مسیر
+// })
+
+onUnmounted(() => {
+  console.log('removing from DOM')
+});
 
 </script>
 <template>
@@ -40,8 +47,9 @@ onNuxtReady(() => {
       </div>
     </div>
 
-
-    <NuxtIsland name="Comments" :lazy="true" :client-only="true" @hydrated="handleHydration" />
+    <NuxtClientFallback fallback="در حال بارگذاری کامنت ها...">
+      <Comments />
+    </NuxtClientFallback>
 
   </div>
 </template>

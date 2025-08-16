@@ -10,6 +10,26 @@ export default defineNuxtConfig({
     transpile: ["tapable"],
   },
 
+  runtimeConfig: {
+    public: {
+      apiBaseUrl: process.env.NUXT_PUBLIC_API_BASE_URL, // for clientSide
+      testEnv: "testEnv value",
+    },
+    privateApiKey: process.env.NUXT_PRIVATE_API_KEY, // for serverSide and clientSide
+  },
+
+  app: {
+    head: {
+      title: "Recipe App",
+      htmlAttrs: {
+        lang: "en",
+      },
+      link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+      charset: "utf-16",
+      viewport: "width=device-width, initial-scale=1, maximum-scale=1",
+    },
+  },
+
   modules: [
     "@nuxt/eslint",
     "@nuxt/icon",
