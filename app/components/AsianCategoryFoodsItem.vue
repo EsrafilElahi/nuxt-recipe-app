@@ -14,13 +14,13 @@ const props = defineProps(['recipe'])
       <template #content>
         <div class="flex justify-between items-end gap-3">
           <div>
-            <h3 class="text-secondary text-[17px]">pizza food name</h3>
-            <h6 class="text-quick-silver text-[14px]">dinner</h6>
+            <h3 class="text-secondary whitespace-nowrap text-[17px]">{{ recipe?.name }}</h3>
+            <h6 class="text-quick-silver text-[14px]">{{ recipe?.difficulty }}</h6>
           </div>
 
           <div class="bg-primary p-1 px-1.5 rounded-xl flex gap-1 items-center">
             <Icon name="lucide:star" size="12" class="text-white" />
-            <span class="text-white font-bold text-[9px]">4.3</span>
+            <span class="text-white font-bold text-[9px]">{{ recipe?.rating }}</span>
           </div>
         </div>
 

@@ -1,8 +1,8 @@
 <script setup>
 const router = useRouter();
-const limit = ref(5);
+const limit = ref(6);
 
-const { data, pending, error, refresh } = useApiFetch('/recipes', {
+const { data, pending, error, refresh } = useApiFetch('/recipes/tag/Asian', {
   key: 'recipes',
   query: computed(() => ({
     limit: limit.value
@@ -50,7 +50,7 @@ const handleSeeMoreAsianFoods = () => {
         see all</span>
     </div>
 
-    <div class="w-full grid grid-cols-5 gap-10 mt-7 mb-20">
+    <div class="w-full grid grid-cols-6 gap-10 mt-7 mb-20">
       <AsianCategoryFoodsItem v-for="recipe in recipes" :key="recipe.id" :recipe="recipe" />
     </div>
   </div>
