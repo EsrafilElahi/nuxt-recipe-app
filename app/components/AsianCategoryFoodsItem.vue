@@ -5,7 +5,7 @@
 <template>
   <NuxtLink to="/about">
     <Card
-      class="w-[200px] mt-7 rounded-[20px] shadow-[0px_5px_20px_3px_rgba(0,0,0,0.15)] hover:shadow-[0px_5px_20px_4px_rgba(0,0,0,0.20)] transition-shadow duration-[400ms]">
+      class="w-full h-[270px] flex flex-col justify-between rounded-[20px] shadow-[0px_5px_20px_3px_rgba(0,0,0,0.15)] hover:shadow-[0px_5px_20px_4px_rgba(0,0,0,0.20)] transition-shadow duration-[400ms]">
       <template #header>
         <img alt="food img" class="rounded-[20px]"
           src="https://thumbs.dreamstime.com/b/single-sushi-maki-above-salmon-avocado-white-background-image-focuses-structure-colors-ingredients-383015712.jpg" />

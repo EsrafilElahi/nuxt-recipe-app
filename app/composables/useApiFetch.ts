@@ -4,6 +4,11 @@ export const useApiFetch = (url: string, options: any = {}) => {
 
   return useFetch(url, {
     baseURL: config?.public?.apiBaseUrl,
+
+    cache: "force-cache",
+    revalidate: 60000, // 60 mins
+    staleWhileRevalidate: true,
+
     headers: {
       Authorization: token?.value ? `Bearer ${token?.value}` : "",
       ...options.headers,
