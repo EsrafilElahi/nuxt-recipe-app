@@ -11,9 +11,15 @@
 }
 
 .p-card-header {
-  height: 70%;
+  height: 60%;
 }
 
 .p-card-body {
   padding: 16px;
+}
+
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
