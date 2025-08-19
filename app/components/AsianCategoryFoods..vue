@@ -1,6 +1,13 @@
 <script setup>
 const router = useRouter();
 
+const { data, pending, error, refetch } = useApiFetch('/recipes');
+
+
+watch(data, (newData) => {
+  console.log('newData :', newData)
+})
+
 const handleSeeMoreAsianFoods = () => {
   return router.push('/asian-foods-list');
 }
@@ -8,7 +15,7 @@ const handleSeeMoreAsianFoods = () => {
 </script>
 
 <template>
-  <div class="flex flex-col items-start justify-between border border-primary">
+  <div class="flex flex-col items-start justify-between">
     <div class="w-full flex justify-between items-center">
       <div class="flex flex-col items-start justify-between">
         <span v-capitalize class="text-secondary font-bold text-[20px]">asian recipes</span>

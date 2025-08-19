@@ -1,6 +1,11 @@
-// @ts-check
-import withNuxt from './.nuxt/eslint.config.mjs'
-
-export default withNuxt(
-  // Your custom configs here
-)
+module.exports = {
+  globals: {
+    useApiFetch: 'readonly',
+  },
+  extends: [
+    '@nuxtjs/eslint-config',
+  ],
+  rules: {
+    // قانون‌های سفارشی شما
+  },
+};
