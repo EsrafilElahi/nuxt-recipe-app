@@ -10,6 +10,10 @@
   box-shadow: 10px 10px 10px #d0c;
 }
 
+.p-card-header {
+  height: 70%;
+}
+
 .p-card-body {
   padding: 16px;
 }
