@@ -7,7 +7,7 @@ export default defineNuxtConfig({
   css: ["~/assets/css/main.css"],
 
   build: {
-    transpile: ["tapable"],
+    transpile: ["tapable", "primevue"],
   },
 
   runtimeConfig: {
@@ -15,7 +15,7 @@ export default defineNuxtConfig({
       apiBaseUrl: process.env.NUXT_PUBLIC_API_BASE_URL, // for clientSide
       testEnv: "testEnv value",
     },
-    privateApiKey: process.env.NUXT_PRIVATE_API_KEY, // for serverSide and clientSide
+    apiBaseUrl: process.env.NUXT_PRIVATE_API_BASE_URL,
   },
 
   app: {
