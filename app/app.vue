@@ -1,6 +1,5 @@
 <script setup lang="ts">
 const appConfig = useAppConfig();
-console.log({ appConfig });
 
 useHeadSafe({
   title: 'recipe app',

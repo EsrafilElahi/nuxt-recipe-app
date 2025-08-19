@@ -1,7 +1,17 @@
 <script setup>
 const router = useRouter();
 
-const { data, pending, error, refetch } = useApiFetch('/recipes');
+const { data, pending, error, refetch } = useApiFetch('/recipes', {
+  transform: (data) => {
+    console.log(data);
+    return {
+      ...data,
+      recipes: data.recipes?.slice(0, 10) || []
+    };
+    },
+  pick: ['recipes']
+
+});
 
 
 watch(data, (newData) => {
