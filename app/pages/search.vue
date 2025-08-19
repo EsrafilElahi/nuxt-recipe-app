@@ -7,7 +7,7 @@ definePageMeta({
 });
 
 const handleHydration = () => {
-  console.log('handleHydration comments')
+  console.log('handleHydration search component!!!!')
 }
 
 
@@ -15,6 +15,11 @@ const handleHydration = () => {
 
 <template>
   <div>
-    <NuxtIsland name="SearchBox" :client-only="true" @hydrated="handleHydration" />
+
+    <ClientOnly>
+      <SearchBox />
+    </ClientOnly>
+
+    <!-- <NuxtIsland name="SearchBox" :client-only="true" @hydrated="handleHydration" /> -->
   </div>
 </template>
