@@ -39,7 +39,7 @@ const headers = useRequestHeaders();
     <NuxtRouteAnnouncer />
 
     <NuxtLayout>
-      <NuxtLoadingIndicator color="#f6b100" />
+      <NuxtLoadingIndicator color="#d0c" />
       <NuxtErrorBoundary>
         <NuxtPage />
       </NuxtErrorBoundary>
