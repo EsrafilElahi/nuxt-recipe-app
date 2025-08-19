@@ -36,7 +36,7 @@ onUnmounted(() => {
           <span>loading...</span>
         </template>
 
-        <PizzaCategoryFoods />
+        <ItalianCategoryFoods />
       </NuxtClientFallback>
 
 
