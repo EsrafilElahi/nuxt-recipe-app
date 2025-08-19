@@ -8,6 +8,7 @@ export const useApiFetch = (url: string, options: any = {}) => {
       Authorization: token?.value ? `Bearer ${token?.value}` : "",
       ...options.headers,
     },
+    ...options,
     onRequest: ({ options, request }) => {
       if (process.dev) {
         console.log("dev requests log :", request);

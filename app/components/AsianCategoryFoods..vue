@@ -8,7 +8,7 @@ const { data, pending, error, refetch } = useApiFetch('/recipes', {
       ...data,
       recipes: data.recipes?.slice(0, 10) || []
     };
-    },
+  },
   pick: ['recipes']
 
 });
