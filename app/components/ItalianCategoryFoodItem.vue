@@ -5,9 +5,9 @@ const props = defineProps(['recipe'])
 </script>
 
 <template>
-  <NuxtLink :to="`/foods-list/${recipe.id}`">
+  <NuxtLink :to="`/foods-list/${recipe.id}`" class="w-full">
     <div
-      class="flex items-center justify-between gap-[20px] py-2 pl-2 pr-[30px] mt-10 w-[560px] shadow-[0px_5px_20px_3px_rgba(0,0,0,0.15)] hover:shadow-[0px_5px_20px_4px_rgba(0,0,0,0.20)] transition-shadow duration-[400ms] rounded-xl">
+      class="flex items-center justify-between gap-[20px] py-2 pl-2 pr-[30px] mt-10 w-full xl:w-[560px] shadow-[0px_5px_20px_3px_rgba(0,0,0,0.15)] hover:shadow-[0px_5px_20px_4px_rgba(0,0,0,0.20)] transition-shadow duration-[400ms] rounded-xl">
       <div class="flex-[35%]">
         <img :alt='recipe.name' :src="recipe.image" class="rounded-xl w-[180px] h-[100px] object-cover" />
       </div>

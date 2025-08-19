@@ -28,7 +28,7 @@ const handleClick = (foodID) => {
   <div v-else-if="error" class="flex justify-center items-center">error :
     {{ error.message }}</div>
 
-  <div v-else class="grid grid-cols-7 gap-10">
+  <div v-else class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-6 gap-10">
     <FoodItem v-for="recipe in italianRecipesList" :key="recipe.id" :recipe="recipe"
       @click="() => handleClick(recipe.id)" />
   </div>

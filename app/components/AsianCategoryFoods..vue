@@ -50,7 +50,7 @@ const handleSeeMoreAsianFoods = () => {
         see all</span>
     </div>
 
-    <div class="w-full grid grid-cols-6 gap-10 mt-7 mb-20">
+    <div class="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-6 gap-10 mt-7 mb-20">
       <AsianCategoryFoodsItem v-for="recipe in recipes" :key="recipe.id" :recipe="recipe" />
     </div>
   </div>

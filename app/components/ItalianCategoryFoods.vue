@@ -45,7 +45,7 @@ const handleSeeMoreItlianFoods = () => {
   <div v-if="pending">pending...</div>
   <div v-else-if="error">pending {{ error.message }}</div>
 
-  <div v-else class="flex flex-col items-start justify-between max-w-[560px] grow mb-[70px]">
+  <div v-else class="flex flex-col items-start justify-between max-w-[100%] xl:max-w-[560px] grow xl:mb-[70px]">
     <div class="w-full flex justify-between items-center">
       <div class="flex flex-col items-start justify-between">
         <span v-capitalize class="text-secondary font-bold text-[20px]">italian recipes</span>

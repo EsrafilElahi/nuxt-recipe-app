@@ -30,8 +30,8 @@ onUnmounted(() => {
 
 
 
-    <div class="flex justify-between items-start gap-[60px]">
-      <NuxtClientFallback fallback-tag="section">
+    <div class="flex flex-col justify-between items-start gap-[60px] xl:flex-row">
+      <NuxtClientFallback fallback-tag="section" class="w-full">
         <template #fallback>
           <span>loading...</span>
         </template>
@@ -40,11 +40,11 @@ onUnmounted(() => {
       </NuxtClientFallback>
 
 
-      <div class="flex flex-col items-start justify-between h-full gap-10">
-        <img src="/images/chef.png" alt="chef" class="w-[600px] h-[300px] rounded-2xl">
+      <div class="w-full flex flex-col items-start justify-between h-full gap-10">
+        <img src="/images/chef.png" alt="chef" class="w-full xl:w-[600px] h-[300px] sm:h-[400px] xl:h-[300px] rounded-2xl">
         <!-- <NuxtPicture fit="cover" height="200" src="/images/chef.png" alt="test" sizes="100vw sm:50vw md:400px" densities="x1" /> -->
 
-        <img src="/images/food.jpg" alt="chef" class="w-[600px] h-[300px] rounded-2xl">
+        <img src="/images/food.jpg" alt="chef" class="w-full xl:w-[600px] h-[300px] sm:h-[400px] xl:h-[300px] rounded-2xl">
       </div>
     </div>
 
