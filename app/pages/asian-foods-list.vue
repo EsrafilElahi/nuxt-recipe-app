@@ -1,8 +1,9 @@
 <script setup>
 const router = useRouter();
 
-const { data, pending, error } = useApiFetch('/recipes/tag/Asian', {
+const { data, pending, error } = await useApiFetch('/recipes/tag/Asian', {
   key: 'recipes-asian-list',
+  lazy: false,
   query: {
     limit: 100
   }

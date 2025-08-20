@@ -1,7 +1,7 @@
 <script setup>
 const router = useRouter();
 
-const { data, pending, error, refresh } = useApiAsyncData('/recipes/tag/Italian', 'recipes-italian-6', {
+const { data, pending, error, refresh } = await useApiAsyncData('/recipes/tag/Italian', 'recipes-italian-6', {
   fetchOptions: {
     query: {
       limit: 5

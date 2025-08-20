@@ -8,7 +8,7 @@ const searchQuery = computed(() =>
   debouncedValue.value?.trim()?.length > 1 ? { q: debouncedValue.value, limit: 100 } : { q: undefined }
 );
 
-const { data, pending, error, refresh } = useApiFetch('/recipes/search',
+const { data, pending, error, refresh } = await useApiFetch('/recipes/search',
   {
     key: searchKey,
     query: searchQuery,

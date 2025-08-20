@@ -2,8 +2,9 @@
 const router = useRouter();
 const limit = ref(6);
 
-const { data, pending, error, refresh } = useApiFetch('/recipes/tag/Asian', {
+const { data, pending, error, refresh } = await useApiFetch('/recipes/tag/Asian', {
   key: 'recipes-asian-6',
+  lazy: false,
   query: computed(() => ({
     limit: limit.value
   })),

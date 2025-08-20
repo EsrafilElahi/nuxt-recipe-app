@@ -3,7 +3,7 @@ const route = useRoute();
 
 const foodID = computed(() => route?.params?.foodID ?? null);
 
-const { data, pending, error, refresh } = useApiFetch(
+const { data, pending, error, refresh } = await useApiFetch(
   () => `/recipes/${foodID?.value}`,
   {
     key: `recipes-${foodID?.value}`,
@@ -14,7 +14,7 @@ const { data, pending, error, refresh } = useApiFetch(
         mealType: data.mealType || []
       }
     },
-    lazy: true,
+    lazy: false,
     watch: [foodID],
     immediate: computed(() => !!foodID.value), // فقط اگر foodID معتبر باشد اجرا شود
   }

@@ -1,6 +1,6 @@
 <script setup>
 
-const { data, pending, error } = useApiAsyncData('/comments', 'comments-list', {
+const { data, pending, error } = await useApiAsyncData('/comments', 'comments-list', {
   fetchOptions: {
     query: {
       limit: 5
