@@ -14,7 +14,7 @@ const { data, pending, error, refresh } = await useApiFetch(
         mealType: data.mealType || []
       }
     },
-    lazy: false,
+    lazy: true,
     watch: [foodID],
     immediate: computed(() => !!foodID.value), // فقط اگر foodID معتبر باشد اجرا شود
   }

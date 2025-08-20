@@ -8,6 +8,7 @@ export const useApiFetch = (url: string, options: any = {}) => {
     cache: "force-cache",
     revalidate: 60000, // 60 mins
     staleWhileRevalidate: true,
+    lazy: false,
 
     headers: {
       Authorization: token?.value ? `Bearer ${token?.value}` : "",

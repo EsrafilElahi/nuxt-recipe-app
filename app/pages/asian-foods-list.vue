@@ -3,7 +3,8 @@ const router = useRouter();
 
 const { data, pending, error } = await useApiFetch('/recipes/tag/Asian', {
   key: 'recipes-asian-list',
-  lazy: false,
+  baseURL: useRuntimeConfig().public.apiBaseUrl,
+  lazy: true,
   query: {
     limit: 100
   }

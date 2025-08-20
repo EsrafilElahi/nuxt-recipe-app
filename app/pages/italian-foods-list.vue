@@ -8,7 +8,7 @@ const { data, pending, error } = await useApiAsyncData('/recipes/tag/Italian', '
     }
   },
   asyncDataOptions: {
-    lazy: false
+    lazy: true
   }
 });
 
